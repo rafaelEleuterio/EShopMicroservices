@@ -1,6 +1,4 @@
-﻿using CatalogApi.Products.CreateProduct;
-
-namespace CatalogApi.Products;
+﻿namespace CatalogApi.Products.CreateProduct;
 
 public record CreateProductRequest(string Name,
     List<string> Category,
