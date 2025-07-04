@@ -1,8 +1,4 @@
-﻿
-
-using CatalogApi.Models;
-
-namespace CatalogApi.Products.CreateProduct;
+﻿namespace CatalogApi.Products.CreateProduct;
 
 public record CreateProductCommand(string Name,
     List<string> Category,
