@@ -26,7 +26,7 @@ internal class DeleteProductCommandHandler
             logger.LogWarning("Product with Id {Id} not found", command.Id);
             //return new DeleteProductResult(false);
 
-            throw new ProductNotFoundException();
+            throw new ProductNotFoundException(command.Id);
         }
         
         // Delete the product
